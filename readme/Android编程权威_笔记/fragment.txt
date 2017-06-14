@@ -1,0 +1,115 @@
+UI fragment 与 fragment 管理器  （实例项目 CriminalIntent）
+
+UI 设计的灵活性需求
+    List -> Detail (两个Activity,一个负责管理List,一个负责管理Detail)
+
+    1.  对于平板，可以同时显示List、Detail
+    2.  如果在Detail，并想查看列表中的下一条记录信息。如无需返回列表界面，滑动屏幕就能查看下一条记录信息就好了。
+        每滑动一次屏幕，应用便自动切换到下一条记录明细。
+    
+    这些就需要：
+        activity界面可以在运行时组装，甚至重新组装
+        activity视图可以在运行时切换，但控制视图的代码必须
+        在activity中实现。因而，各个activity还是得和特定的用户屏幕紧紧绑定在一起。 
+                            
+                                    --- 引入fragment
+
+引入fragment
+    1.  采用fragment而不是activity来管理应用UI，可绕开Android系统activity使用规则的限制
+    2.  fragment是一种控制器对象，activity可委派它完成一些任务：
+                （这些任务通常就是管理用户界面，受管的用户界面可以是一整屏或是整屏的一部分。）
+    3.  管理用户界面的fragment又称为UI fragment。它自己也有产生于布局文件的视图
+        fragment视图包含了用户可以交互的可视化UI元素。   
+    4.  activity视图可预留供fragment视图插入的位置。如果有多个fragment要插入，activity视图也可提供多个位置。
+    5.  根据应用和用户的需求，可联合使用fragment及activity来组装或重新组装用户界面。
+        在整个手机 平板 生命周期过程中，activity视图在技术上保持不变。因此不用担心会违反Android系统的activity使
+        用规则。
+
+activity 托管 fragment
+    **************************************
+    为托管UI fragment，activity必须做到：
+         在布局中为fragment的视图安排位置；
+         管理fragment实例的生命周期。
+    **************************************
+    activity托管UI fragment有如下两种方式：
+         在activity布局中添加fragment；
+         在activity代码中添加fragment。
+
+    说明：
+        第一种方式：
+            就是使用布局fragment。这种方式简单但不够灵活。在activity布局中添加fragment，就等同于将fragment及其视图与activity的视图绑定在一起
+            并且在activity的生命周期过程中，无法切换fragment视图。 -----（不灵活）
+        第二种方式：
+            比较复杂，但也是唯一可以在运行时控制fragment的方式。我们自行决定何时添加fragment以及随后可以完成何种具体任务，也可以移除fragment
+            用其他fragment代替当前fragment，然后重新添加已移除的fragment。-----（灵活，代码多）
+                                                                    -------（还是要在activity视图层级结构中为fragment视图安排位置。）
+    **************************************
+
+    1.  activity需要 extends FragmentActivity
+    2   activity 定义容器视图 （在activity视图层级结构中为fragment视图安排位置）
+                <?xml version="1.0" encoding="utf-8"?>
+                <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+        FrameLayout是服务于CrimeFragment的容器视图。注意容器视图是通用性视图，不局限于
+        CrimeFragment类，我们可以并且也将使用同一个布局来托管其他的fragment。
+
+    3.  创建 UI fragment
+            创建UI fragment的步骤与创建activity的步骤相同，具体如下：
+                 通过定义布局文件中的组件，组装界面；
+                 创建fragment类并设置其视图为定义的布局；
+                 通过代码的方式，组装在布局文件中实例化的组件
+
+    4.  添加 UI fragment 到 FragmentManager
+            在Fragment类引入Honeycomb的时候，为协同工作，Activity类中相应添加了FragmentManager类。
+            FragmentManager类负责管理fragment并将它们的视图添加到activity的视图层级结构中。
+            **************************************
+            FragmentManager类具体管理的是：
+                 fragment队列；
+                 fragment事务回退栈（稍后会介绍）
+            **************************************
+
+            fragment 事务:
+                fragment事务被用来   添加、移除、附加、分离或替换  fragment队列中的fragment。这是使用
+                fragment在运行时组装和重新组装用户界面的关键。FragmentManager管理着fragment事务回
+                退栈。
+
+                R.id.fragment_container 是托管activity中预留fragment的位置的ID
+
+                FragmentManager fm = getSupportFragmentManager();
+                Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+                if (fragment == null) {
+                    fragment = new CrimeFragment();
+                    fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
+                }
+
+     5. FragmentManager 与 fragment 生命周期  
+            activity的FragmentManager负责调用队列中fragment的生命周期方法。
+            1. 添加fragment供FragmentManager管理时，onAttach(Activity)、onCreate(Bundle)以及onCreateView(...)方法会被调用。
+            2. 托管activity的onCreate(...)方法执行后，onActivityCreated(...)方法也会被调用。
+                    因为我们正在CrimeActivity.onCreate(...)方法中添加CrimeFragment，所以fragment被添加后，该方法会被调用。
+            3. 在activity处于运行状态时，添加fragment会发生什么呢？
+                    此种情况下，FragmentManager立即驱使fragment行动，执行必要方法，快速跟上activity的步伐（与activity的最新状态保持同步）。
+                    例如：
+                        向处于运行状态的activity中添加fragment时，以下fragment生命周期方法会被依次调用：
+                            onAttach(Activity)、onCreate(Bundle)、onCreateView(...)、onActivityCreated(Bundle)、onStart()以及onResume()。
+            4. 一旦fragment的状态与activity的状态保持了同步，托管activity的FragmentManager就会边接收操作系统的调用指令，
+                边调用其他生命周期方法，以继续保持fragment与activity的状态一致。
+     ********************************************************************************************************************************************************
+     6. 采用 fragment 的应用架构
+            一个良好的使用原则是：应用单屏至多使用2～3个fragment
+    ********************************************************************************************************************************************************
+    7.  使用fragment argument     
+
+        1.  从 fragment 中启动 activity 和 activit -> activity 类似
+
+        2.  一个比较好的做法是，将crime ID存储在属于CrimeFragment的某个地方，而不是保存在CrimeActivity的私有空间里
+            这样，无需依赖于CrimeActivity的intent内指定extra的存在，CrimeFragment就能获取自己所需的extra数据。
+            属于fragment的“某个地方”实际就是它的argument bundle
+
+        3.  fragment argument 
+                每个fragment实例都可附带一个Bundle对象。该bundle包含有键值对，我们可以像附加extra到Activity的intent中那样使用它们。
+                一个键值对即一个argument
+        

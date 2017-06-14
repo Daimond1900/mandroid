@@ -1,0 +1,52 @@
+使用RecyclerView显示
+
+单例：
+    是特殊的java类，在创建实例时，一个单例类仅允许创建一个实例
+
+    用单例，存储模型对象
+
+    应用能在内存里存多久，单例就能存多久。因此将对象列表保存在单例里的话，就能随时获取
+
+    使用单例还要注意一点：
+        Android从内存里移除应用时，单例对象也就不复存在了。
+        虽然CrimeLab单例不是数据持久保存的好方案，但它确实能保证仅拥有一份crime数据，并且方便了控制层类间的数据传递。
+
+
+RecyclerView：
+    RecyclerView是ViewGroup的子类
+    每一个列表项都是作为一个View子对象显示的。
+    ---------------------------------------------------------------------------------------------------------------
+    这些View子对象既可以是复杂的View对象，也可以是简单的View对象，这取决于我们对列表显示复杂度的需要。
+    ---------------------------------------------------------------------------------------------------------------
+    RecyclerView就是这么做的。它只创建刚好充满屏幕的12个视图，而不是100个视图。用户
+    滑动屏幕切换视图时，上一个视图会被回收利用。顾名思义，RecyclerView所做的就是回收再
+    利用，循环往复。
+
+    RecyclerView的任务 仅限于回收和定位屏幕上的TextView
+
+    TextView 能够显示数据还离不开另外两个类的支持：Adapter子类和ViewHolder子类
+
+     RecyclerView自身不会创建视图，adapter创建ViewHolder，而ViewHolder引用着一个个itemView
+
+    adapter是个控制器对象，从模型层获取数据，然后提供给RecyclerView显示，起到了沟通的桥梁作用。
+        adapter负责：
+             创建必要的ViewHolder；
+             绑定ViewHolder至模型层数据。
+            
+ViewHolder 和 Adapter：
+    ---------------------------------------------------------------------------------------------------------------
+    ViewHolder：
+       
+        ViewHolder只做一件事：容纳View视图        ViewHolder为itemView而生
+            经典的：
+                public class ListRow extends RecyclerView.ViewHolder {
+                    public ImageView mThumbnail;
+                    public ListRow(View view) {
+                        super(view);
+                        mThumbnail = (ImageView) view.findViewById(R.id.thumbnail);
+                    }
+                } 
+    ---------------------------------------------------------------------------------------------------------------
+    adapter : 
+
+

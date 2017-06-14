@@ -1,0 +1,116 @@
+�����������ڣ�activity�����С���ͣ��ֹͣ���ֿ��ܵ�״̬�����ת��
+ÿ��״̬����ת��ʱ�����ж�Ӧ��Activity������״̬�ı����Ϣ֪ͨ��activity
+
+������ --> onCreate() (������ɼ�) --> onStart() --> onResume()(�ɼ�����ǰ̨) --> onPause()(�ɼ����뿪ǰ̨) --> onStop()(���ٿɼ�) --> onDestroy()(����)
+
+��������onCreate() (������ɼ�) --> onStart() --> onResume()(�ɼ�����ǰ̨)
+�����˳���onPause()(�ɼ����뿪ǰ̨) --> onStop()(���ٿɼ�) --> onDestroy()(����)
+	
+APP�����ˣ�����ҳ����������˵���̨���ص�  onPause()(�ɼ����뿪ǰ̨) --> onStop()(���ٿɼ�)  (����ص�onDestroy,û������)
+��APP�ٴο���ʱ�� �ص� onStart() (�ɼ�������ǰ̨)--> onResume()(�ɼ�����ǰ̨) 
+
+������ɺ������໥�л���
+	onPause()(�ɼ����뿪ǰ̨)--> onSaveInstanceState()�������� --> onStop()(���ٿɼ�) --> onDestroy()(����) --> onCreate() (������ɼ�) --> onStart() --> onResume()(�ɼ�����ǰ̨)
+	
+	��Ļ��ת��android����ȥ����֮ƥ��Ĳ��֣�Ȼ����ʾ��������Ļ��ת�ˣ���Ҫ����onCreate()����
+	
+	�����Ҫ�����豸��תǰ��������
+		��������Activity��������һ��ʵ�ַ�ʽ��
+			protected void onSaveInstanceState(Bundle outState)
+			�÷���ͨ����onPause()��onStop()�Լ�onDestroy()����֮ǰ��ϵͳ���á�
+			����onSaveInstanceState(...)��Ĭ��ʵ��Ҫ������activity��ͼ������״̬���ݱ�����
+			Bundle�����С�
+			Bundle�Ǵ洢�ַ��������޶�����ֵ֮��ӳ���ϵ����ֵ�ԣ���һ�ֽṹ��
+			��ͨ������onSaveInstanceState(...)��������һЩ���ݱ�����bundle�У�Ȼ����onCreate(...)������ȡ����Щ����
+			
+			protected void onSaveInstanceState(Bundle outState){
+				super.onSaveInstanceState(outState);
+				outState.putInt(KEY_INDEX, mCurrentIndex);
+			}
+			
+			��onCreate(){
+				if(savedInstanceState != null){
+					savedInstanceState.getInt(KEY_INDEX);
+				}
+			}
+			
+			ע�⣬��Bundle�д洢�ͻָ�����������ֻ���ǻ����������ͣ�primitive type���Լ�����ʵ
+			��Serializable��Parcelable�ӿڵĶ�����Bundle�б��涨��������Ǹ������⣬��Ϊ
+			��ȡ�صĶ�������Ѿ���ʱ�ˡ��ȽϺõ������ǣ�ͨ��������ʽ���涨������󣬶���Bundle
+			�б�������Ӧ�Ļ����������͵ı�ʾ����
+
+ͨ��onCreate(...)�����������£�
+	ʵ����������������������Ļ�ϣ�����setContentView(int)��������
+	������ʵ�����������
+	Ϊ������ü������Դ����û�������
+	�����ⲿģ�����ݡ�
+
+	
+һ��activity����һ��activity��򵥵ķ�ʽstartActivity(intent)
+activity����startActivity(...)����ʱ����������ʵ�ʷ����˲���ϵͳ��ActivityManager
+ActivityManager���𴴽�Activityʵ����������onCreate(...)����
+ActivityManager������һ��Activity��ȡ����intent
+����ǣ�	
+	���� intent ��ͨ��
+	intent ���� �� component���Ĵ�������������������������ϵͳͨѶ��һ��ý�鹤��
+	intent ��һ�ֶ���;ͨ�Ź��ߣ����ֹ��췽����
+	
+��ʽ����ʽintent ��
+	ͨ��ָ��Context��Class����Ȼ�����intent�Ĺ��췽��������Intent���򴴽�������ʽintent����ͬһӦ���У�����ʹ����ʽintent����activity��
+	
+ͬһӦ���������activity��ͨ��ȴҪ������Ӧ���ⲿ��ActivityManager���⿴���������е���֡�����������ģʽ��ʹ��ͬӦ�ü��activity����������׺ܶࡣ
+
+Ҫ����activity��ȡ������Ϣʱ���ɵ�������Activity����
+public void startActivityForResult(Intent intent, int requestCode) 
+	
+	�÷����ĵ�һ������ͬǰ����intent��
+	�ڶ���������������롣����������ȷ��͸���activity��Ȼ���ٷ��ظ���activity���û���������ֵ����һ��activity������ͬ���͵���activity��
+	����Ҫ�ж�������Ϣ������ʱ��ͨ�����õ����������
+
+
+
+���Ľ���UI ���� Fragment
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

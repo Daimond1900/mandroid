@@ -1,0 +1,18 @@
+使用布局与组件创建用户界面
+
+ 边距（margin）     指定视图组件间的距离；
+ 内边距（padding）  指定视图外边框与其内容间的距离。
+
+有些属性名称以layout_开头，如android:layout_marginLeft，而其他属性名称则不是，如android:text。
+
+    1.  不以layout_开头的属性作用于组件。
+            组件实例化时，会调用某个方法按照属性及属性值进行自我配置。
+    2.  以layout_开头的属性则作用于组件的父组件。
+            我们将这些属性统称为布局参数。它们会告诉父布局如何在内部安排自己的子元素。
+
+android:layout_weight 属性的工作原理
+    
+
+
+Android 开发设计原则 
+    http://developer.android.com/design/index.html

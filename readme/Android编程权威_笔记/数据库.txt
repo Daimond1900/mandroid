@@ -1,0 +1,70 @@
+SQLite数据库 （-------------持久化保存数据）
+
+
+	目录：/data/data/[your package name]的子目录 （除了root 后才能看见）
+
+	使用单个文件存储数据，使用SQLite库读取数据
+
+	实际开发时，建议总是遵循以下步骤。
+		(1) 确认目标数据库是否存在。
+		(2) 如果不存在，首先创建数据库，然后创建数据库表以及必需的初始化数据
+		(3) 如果存在，打开并确认CrimeDbSchema是否是最新版本（后续章节可能会在CriminalIntent中有增删操作）。
+		(4) 如果是旧版本，就运行相关代码升级到最新版本。
+
+	使用：
+		1. 定义 Schema：（清楚存储什么样的数据）
+			1.1 创建定义Schema的java类：
+					database包下：StudyDbSchema.java
+						1.2 在StudyDbSchema.java里定义一个描述数据表的内部类
+
+							public class StudyDbSchema {
+								 public static final class StudyTable {
+									 public static final String NAME = "studys";
+									 public static final class Cols {
+									 	public static final String UUID = "uuid";
+										public static final String TITLE = "title";
+										public static final String DATE = "date";
+									}
+								}
+							}
+
+			1.2 创建初识数据库：（有了SQLiteOpenHelper类，打开SQLiteDatabase的繁杂工作都可以交给它处理）
+
+				public class StudentBaseHelper extends SQLiteOpenHelper {
+
+	    			public StudentBaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+	        				super(context, name, factory, version);
+	    			}
+
+				    @Override
+				    public void onCreate(SQLiteDatabase db) {
+				    	/*建表*/
+				        db.execSQL("create table " + StudentTable.NAME + "(" +
+				                " _id integer primary key autoincrement, " +
+				                StudentTable.Cols.S_NAME + ", " +
+				                StudentTable.Cols.S_ADDRESS + ", " +
+				                StudentTable.Cols.S_AGE +
+				                ")"
+       					 );
+				    }
+
+				    @Override
+				    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+				    }
+				}
+
+			1.3	在需要的地方
+					private SQLiteDatabase mDatabase;
+					mDatabase = new StudentBaseHelper(mContext).getWritableDatabase();
+
+			1.4	这里调用getWritableDatabase()方法时，CrimeBaseHelper要做如下工作。
+				(1) 打开/data/data/com.bignerdranch.android.criminalintent/databases/crimeBase.db数据库；如果
+				不存在，就先创建crimeBase.db数据库文件。
+				(2) 如果是首次创建数据库，就调用onCreate(SQLiteDatabase)方法，然后保存最新的版
+				本号。
+				(3) 如果已创建过数据库，首先检查它的版本号。如果CrimeOpenHelper中的版本号更高，
+				就调用onUpgrade(SQLiteDatabase, int, int)方法升级。
+				最后，再做个总结：onCreate(SQLiteDatabase)方法负责创建初始数据库；onUpgrade
+				(SQLiteDatabase, int, int)方法负责与升级相关的工作。
+

@@ -1,0 +1,57 @@
+总揽： Xutils
+
+缓存：           DiskLruCache
+
+图片加载：       Glide
+
+图片处理：       Glide-transformations
+
+网络请求：       Retrofit (配合Rxjava)
+
+网络解析：       json:   Gson
+                 html:   HtmlPaser
+
+数据库：         GreenDAO
+-----------------------------------------------------------------------------------------------------------------------------
+依赖注入：       ButterKnife
+
+                                1.  project build.gradle里面：
+                                                classpath 'com.jakewharton:butterknife-gradle-plugin:8.6.0'
+
+                                2.  app build.gradle里面：
+
+                                          apply plugin: 'com.jakewharton.butterknife'
+
+                                          dependencies{
+                                                    compile 'com.jakewharton:butterknife:8.6.0'
+                                                    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+                                                }
+
+                                https://github.com/JakeWharton/butterknife 查看版本号
+-----------------------------------------------------------------------------------------------------------------------------
+
+图表：          helloCharts
+
+后台处理：
+
+事件总线：       EventBus
+-----------------------------------------------------------------------------------------------------------------------------
+Log框架：        logger
+                  app:
+                      dependencies {
+                        compile 'com.orhanobut:logger:1.15'
+                      }
+
+                  在application初始化:
+                    Settings settings = Logger.init("MyLog"); // 配置tag
+                    settings.methodCount(3); // 配置Log中调用堆栈的函数行数
+                    // settings.hideThreadInfo(); // 隐藏Log中的线程信息  ,默认不隐藏
+                    settings.methodOffset(0); // 设置调用堆栈的函数偏移值，0的话则从打印该Log的函数开始输出堆栈信息
+                    settings.logLevel(LogLevel.FULL); // 设置Log的是否输出，LogLevel.NONE即无Log输出
+
+                  Logger.json()
+                  Logger.xml()
+-----------------------------------------------------------------------------------------------------------------------------
+测试框架：
+
+内存泄漏检查：     leakCanary
