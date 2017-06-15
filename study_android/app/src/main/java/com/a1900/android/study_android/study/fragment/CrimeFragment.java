@@ -8,10 +8,14 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 
 import com.a1900.android.study_android.R;
 import com.a1900.android.study_android.study.fragment.model.Crime;
+import com.allen.apputils.DateTimeUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,6 +30,10 @@ public class CrimeFragment extends Fragment {
     @BindView(R.id.crime_title)
     EditText mCrimeTitle;
     Unbinder unbinder;
+    @BindView(R.id.crime_date)
+    Button mCrimeDate;
+    @BindView(R.id.crime_solved)
+    CheckBox mCrimeSolved;
     private Crime mCrime;
 
     @Override
@@ -57,6 +65,18 @@ public class CrimeFragment extends Fragment {
 
             }
         });
+        // 时间按钮的设置
+        mCrimeDate.setText(DateTimeUtil.formatDateTime0(mCrime.getmDate().getTime()));
+        mCrimeDate.setEnabled(false); /*禁用按钮*/
+
+        // 是否处理的checkbox的设置
+        mCrimeSolved.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                mCrime.setmSolved(isChecked);
+            }
+        });
+
         return view;
     }
 
