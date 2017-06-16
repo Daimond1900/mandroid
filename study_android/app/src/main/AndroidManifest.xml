@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".study.fragment.CrimeActivity"></activity>
+        <activity android:name=".study.fragment.list.CrimeListActivity"></activity>
     </application>
 
 </manifest>

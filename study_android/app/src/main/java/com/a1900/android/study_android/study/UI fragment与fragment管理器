@@ -87,3 +87,8 @@ UI设计的灵活性需求  -- UI fragment 与 fragment管理器
                             fragment事务被用来添加、移除、附加、分离或替换fragment队列中的fragment
 
                             activity的FragmentManager负责调用队列中fragment的生命周期方法
+----------------------------------------------------------------------------------------------------
+使用抽象的activity托管fragment：
+    1.   抽象 activity 类： SingleFragmentActivity
+
+

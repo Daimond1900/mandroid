@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.a1900.android.study_android.study.fragment.CrimeActivity;
+import com.a1900.android.study_android.study.fragment.list.CrimeListActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.study_fragment_button:
-                startActivity(CrimeActivity.newCrimeActivity(this)); /*学习UI fragment与fragment 管理器 入口*/
+                startActivity(CrimeListActivity.newCrimeListActivity(this)); /*学习UI fragment与fragment 管理器 入口*/
                 break;
             case R.id.study_recyclerview_button:
 
