@@ -1,10 +1,13 @@
-package com.a1900.android.study_android.study.fragment;
+package com.a1900.android.study_android.study.fragment.details;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +18,7 @@ import android.widget.EditText;
 
 import com.a1900.android.study_android.R;
 import com.a1900.android.study_android.study.fragment.model.Crime;
+import com.a1900.android.study_android.study.fragment.model.CrimeLab;
 import com.allen.apputils.DateTimeUtil;
 
 import butterknife.BindView;
@@ -26,7 +30,9 @@ import butterknife.Unbinder;
  */
 
 public class CrimeFragment extends Fragment {
-
+    private static final String ARG_EXTRA_INFO = "com.a1900.android.study_android.study.fragment.details.CrimeFragment.position";
+    public static final String RETURN_EXTRA_POSTION = "com.a1900.android.study_android.study.fragment.details.CrimeFragment.return.position";
+    private static final String TAG = "CrimeFragment";
     @BindView(R.id.crime_title)
     EditText mCrimeTitle;
     Unbinder unbinder;
@@ -35,11 +41,23 @@ public class CrimeFragment extends Fragment {
     @BindView(R.id.crime_solved)
     CheckBox mCrimeSolved;
     private Crime mCrime;
+    private static int returnPostion;
+
+
+    public void returnResult() {
+        Intent intent = new Intent();
+        intent.putExtra(RETURN_EXTRA_POSTION,returnPostion);
+
+        Log.d(TAG, "onActivityResult: 列表页面返回的数据： " + returnPostion);
+
+        getActivity().setResult(Activity.RESULT_OK, intent);
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mCrime = new Crime();
+        mCrime = CrimeLab.get(getActivity()).getCrimeList().get(getArguments().getInt(ARG_EXTRA_INFO));
+        returnResult();
     }
 
     @Nullable
@@ -49,6 +67,10 @@ public class CrimeFragment extends Fragment {
           false : 因为我们要通过activity代码的方式添加视图*/
         View view = inflater.inflate(R.layout.fragment_crime, container, false);
         unbinder = ButterKnife.bind(this, view);
+
+        mCrimeTitle.setText(mCrime.getmTitle());
+        mCrimeSolved.setChecked(mCrime.ismSolved());
+
         mCrimeTitle.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -76,8 +98,22 @@ public class CrimeFragment extends Fragment {
                 mCrime.setmSolved(isChecked);
             }
         });
-
         return view;
+    }
+
+    /**
+     * 新建CrimeFragment
+     * @param postion
+     * @return
+     */
+    public static CrimeFragment newCrimeFragment(int postion) {
+        Log.d(TAG, "newCrimeFragment: ----------" + postion);
+        returnPostion = postion;
+        Bundle bundle = new Bundle();
+        bundle.putInt(ARG_EXTRA_INFO, postion);
+        CrimeFragment fragment = new CrimeFragment();
+        fragment.setArguments(bundle);
+        return fragment;
     }
 
     @Override

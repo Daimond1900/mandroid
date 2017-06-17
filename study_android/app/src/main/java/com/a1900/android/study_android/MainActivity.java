@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.a1900.android.study_android.study.fragment.list.CrimeListActivity;
+import com.allen.apputils.MLog;
+import com.allen.apputils.Utils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(CrimeListActivity.newCrimeListActivity(this)); /*学习UI fragment与fragment 管理器 入口*/
                 break;
             case R.id.study_recyclerview_button:
-
+                Utils.init(this);
+                MLog.d("hello","sadasjkkkkkkkkdhas");
                 break;
             default:
                 break;

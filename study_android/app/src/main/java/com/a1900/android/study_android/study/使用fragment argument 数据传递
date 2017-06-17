@@ -1,0 +1,61 @@
+使用fragment argument
+
+一个fragment 跳转到另一个fragment传递数据
+
+    1.  CrimeListFragment中启动CrimeActivity实例
+
+    2.  从 fragment 中启动 activity 类似于从 activity 中启动 activity
+
+        调用 Fragment.startActivity(Intent)方法，然后在后台触发调用对应的Activity方法
+
+    3.
+        每个fragment实例都可附带一个Bundle对象
+
+        该bundle包含有键值对
+
+        1.  先在fragment中创建Bundle对象
+
+        2.  往Bundle中put数据
+
+        3.  附加 argument 给 fragment  ：
+                在fragment创建后、添加给activity前，调用Fragment.setArguments(Bundle)方法
+
+----------------------------------------------------------------------------------------------------
+一个界面，返回数据给前页面       （通知RecyclerView的adapter更新数据）
+
+    onResume()方法:
+        RecyclerView.adapter.notifyDataSetChanged();
+
+    1.  通过 fragment 获取返回结果
+
+        不调用Activity的startActivityForResult(...)方法
+
+        转而调用Fragment.startActivityForResult(...)方法
+
+        不覆盖Activity.onActivityResult(...)方法
+
+        转而覆盖Fragment.onActivityResult(...)方法
+
+    重要：
+        从fragment中返回结果的处理稍有不同**********
+
+        fragment能够从activity中接收返回结果，但其自身无法持有返回结果
+
+        只有activity拥有返回结果
+
+        因此，尽管Fragment有自己的startActivityForResult(...)和onActivityResult(...)方法
+
+        但却没有setResult(...)方法
+
+        应让其托管的activity返回结果值setResult；
+
+        在需要返回数据的fragment
+            public void returnResult() {
+                getActivity().setResult(Activity.RESULT_OK, intent);
+            }
+
+            onCreate(){
+                returnResult();
+            }
+
+
