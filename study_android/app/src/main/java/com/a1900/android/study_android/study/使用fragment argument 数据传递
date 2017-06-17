@@ -1,6 +1,6 @@
 使用fragment argument
 
-一个fragment 跳转到另一个fragment传递数据
+fragment 与 activity之间的数据传递
 
     1.  CrimeListFragment中启动CrimeActivity实例
 
@@ -57,5 +57,8 @@
             onCreate(){
                 returnResult();
             }
+
+----------------------------------------------------------------------------------------------------
+现在需实现同一activity托管的两个fragment（CrimeFragment和DatePickerFragment）之间的数据传递
 
 

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -17,6 +18,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 
 import com.a1900.android.study_android.R;
+import com.a1900.android.study_android.study.fragment.dialog.DatePickerFragment;
 import com.a1900.android.study_android.study.fragment.model.Crime;
 import com.a1900.android.study_android.study.fragment.model.CrimeLab;
 import com.allen.apputils.DateTimeUtil;
@@ -33,6 +35,7 @@ public class CrimeFragment extends Fragment {
     private static final String ARG_EXTRA_INFO = "com.a1900.android.study_android.study.fragment.details.CrimeFragment.position";
     public static final String RETURN_EXTRA_POSTION = "com.a1900.android.study_android.study.fragment.details.CrimeFragment.return.position";
     private static final String TAG = "CrimeFragment";
+    private static final String DIALOG_DATE = "DialogDate";
     @BindView(R.id.crime_title)
     EditText mCrimeTitle;
     Unbinder unbinder;
@@ -46,7 +49,7 @@ public class CrimeFragment extends Fragment {
 
     public void returnResult() {
         Intent intent = new Intent();
-        intent.putExtra(RETURN_EXTRA_POSTION,returnPostion);
+        intent.putExtra(RETURN_EXTRA_POSTION, returnPostion);
 
         Log.d(TAG, "onActivityResult: 列表页面返回的数据： " + returnPostion);
 
@@ -89,7 +92,16 @@ public class CrimeFragment extends Fragment {
         });
         // 时间按钮的设置
         mCrimeDate.setText(DateTimeUtil.formatDateTime0(mCrime.getmDate().getTime()));
-        mCrimeDate.setEnabled(false); /*禁用按钮*/
+//        mCrimeDate.setEnabled(false); /*禁用按钮*/
+
+        mCrimeDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fm = getFragmentManager();
+                DatePickerFragment df = new DatePickerFragment();
+                df.show(fm, DIALOG_DATE);
+            }
+        });
 
         // 是否处理的checkbox的设置
         mCrimeSolved.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -103,6 +115,7 @@ public class CrimeFragment extends Fragment {
 
     /**
      * 新建CrimeFragment
+     *
      * @param postion
      * @return
      */
