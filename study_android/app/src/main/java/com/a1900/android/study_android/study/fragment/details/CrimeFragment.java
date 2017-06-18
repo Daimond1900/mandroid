@@ -47,7 +47,7 @@ public class CrimeFragment extends Fragment {
     private static int returnPostion;
 
 
-    public void returnResult() {
+    public void  returnResult() {
         Intent intent = new Intent();
         intent.putExtra(RETURN_EXTRA_POSTION, returnPostion);
 
