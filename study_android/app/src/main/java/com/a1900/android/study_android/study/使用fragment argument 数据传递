@@ -61,4 +61,11 @@ fragment 与 activity之间的数据传递
 ----------------------------------------------------------------------------------------------------
 现在需实现同一activity托管的两个fragment（CrimeFragment和DatePickerFragment）之间的数据传递
 
+传递数据：
+    一样 fragment 里面setArguments(Bundle )
 
+返回数据：
+    1. 设置目标fragment
+
+       CrimeFragment.java (详情页面)
+         dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);

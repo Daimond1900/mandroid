@@ -23,6 +23,8 @@ import com.a1900.android.study_android.study.fragment.model.Crime;
 import com.a1900.android.study_android.study.fragment.model.CrimeLab;
 import com.allen.apputils.DateTimeUtil;
 
+import java.util.Date;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -36,6 +38,8 @@ public class CrimeFragment extends Fragment {
     public static final String RETURN_EXTRA_POSTION = "com.a1900.android.study_android.study.fragment.details.CrimeFragment.return.position";
     private static final String TAG = "CrimeFragment";
     private static final String DIALOG_DATE = "DialogDate";
+    private static final String DIALOG_TIME = "DialogTime";
+    private static final int REQUEST_DATE = 0;
     @BindView(R.id.crime_title)
     EditText mCrimeTitle;
     Unbinder unbinder;
@@ -47,7 +51,7 @@ public class CrimeFragment extends Fragment {
     private static int returnPostion;
 
 
-    public void  returnResult() {
+    public void returnResult() {
         Intent intent = new Intent();
         intent.putExtra(RETURN_EXTRA_POSTION, returnPostion);
 
@@ -91,14 +95,16 @@ public class CrimeFragment extends Fragment {
             }
         });
         // 时间按钮的设置
-        mCrimeDate.setText(DateTimeUtil.formatDateTime0(mCrime.getmDate().getTime()));
+        updateDate();
 //        mCrimeDate.setEnabled(false); /*禁用按钮*/
+
 
         mCrimeDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fm = getFragmentManager();
                 DatePickerFragment df = DatePickerFragment.newInstance(mCrime.getmDate());
+                df.setTargetFragment(CrimeFragment.this, REQUEST_DATE);  //设置了一个目标fragment，需要从这个f中返回数据
                 df.show(fm, DIALOG_DATE);
             }
         });
@@ -111,6 +117,23 @@ public class CrimeFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    private void updateDate() {
+        mCrimeDate.setText(DateTimeUtil.formatDateTime0(mCrime.getmDate().getTime()));
+    }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != Activity.RESULT_OK) {
+            return;
+        }
+        if (requestCode == REQUEST_DATE) {
+            Date date = (Date) data.getSerializableExtra(DatePickerFragment.EXTRA_DATE);
+            mCrime.setmDate(date);
+            updateDate();
+        }
     }
 
     /**
@@ -134,4 +157,5 @@ public class CrimeFragment extends Fragment {
         super.onDestroyView();
         unbinder.unbind();
     }
+
 }
