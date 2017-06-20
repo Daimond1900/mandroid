@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".study.fragment.details.CrimeActivity"></activity>
-        <activity android:name=".study.fragment.list.CrimeListActivity"></activity>
-        <activity android:name=".study.fragment.details_view_pager.CrimePagerActivity"></activity>
+        <activity android:name=".study.fragment.list.CrimeListActivity" />
+        <activity
+            android:name=".study.fragment.details_view_pager.CrimePagerActivity"
+            android:parentActivityName=".study.fragment.list.CrimeListActivity" />
+        <activity android:name=".study.statelayout.StateLayoutActivity"></activity>
     </application>
 
 </manifest>

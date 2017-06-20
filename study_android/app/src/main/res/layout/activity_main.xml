@@ -18,11 +18,11 @@
             android:text="学习碎片" />
 
         <Button
-            android:id="@+id/study_recyclerview_button"
+            android:id="@+id/study_statelayout_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="测试" />
+            android:text="页面切换" />
 
         <Button
             android:layout_width="match_parent"

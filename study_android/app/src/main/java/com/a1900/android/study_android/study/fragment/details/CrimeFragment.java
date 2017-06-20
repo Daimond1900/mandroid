@@ -10,6 +10,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -22,8 +25,11 @@ import com.a1900.android.study_android.study.fragment.dialog.DatePickerFragment;
 import com.a1900.android.study_android.study.fragment.model.Crime;
 import com.a1900.android.study_android.study.fragment.model.CrimeLab;
 import com.allen.apputils.DateTimeUtil;
+import com.allen.apputils.ToastUtils;
+import com.allen.apputils.Utils;
 
 import java.util.Date;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -65,6 +71,7 @@ public class CrimeFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mCrime = CrimeLab.get(getActivity()).getCrimeList().get(getArguments().getInt(ARG_EXTRA_INFO));
         returnResult();
+        setHasOptionsMenu(true);
     }
 
     @Nullable
@@ -158,4 +165,30 @@ public class CrimeFragment extends Fragment {
         unbinder.unbind();
     }
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.fragment_crime_delete, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_delete_crime:
+                Utils.init(getActivity());
+                ToastUtils.init(true);
+                ToastUtils.showShortToast("删除");
+                deleteCrime(returnPostion);
+                getActivity().finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void deleteCrime(int index) {
+        CrimeLab crimeLab = CrimeLab.get(getActivity());
+        List<Crime> crimeList = crimeLab.getCrimeList();
+        crimeList.remove(index);
+    }
 }

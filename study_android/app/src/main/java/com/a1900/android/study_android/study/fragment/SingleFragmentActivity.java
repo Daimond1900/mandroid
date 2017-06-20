@@ -3,8 +3,8 @@ package com.a1900.android.study_android.study.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
 
 import com.a1900.android.study_android.R;
 
@@ -12,7 +12,7 @@ import com.a1900.android.study_android.R;
  * 用于托管fragment的超类
  * Created by 1900 on 2017/6/15.
  */
-public abstract class SingleFragmentActivity extends FragmentActivity {
+public abstract class SingleFragmentActivity extends AppCompatActivity {
 
     protected abstract Fragment createFragment(); /*对外的创建托管的Fragment的接口*/
 
