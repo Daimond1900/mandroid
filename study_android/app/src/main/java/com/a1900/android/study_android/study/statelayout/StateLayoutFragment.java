@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.a1900.android.study_android.R;
 import com.allen.apputils.MLog;
+import com.allen.apputils.NetUtils;
 import com.allen.apputils.ToastUtils;
 import com.classic.common.MultipleStatusView;
 
@@ -69,6 +70,13 @@ public class StateLayoutFragment extends Fragment {
                     case R.id.no_network_retry_view:
                         ToastUtils.showShortToast("点击了无网络视图");
                         MLog.d("点击了无网络视图");
+                        if (NetUtils.isConnected(getActivity())) {
+                            if (NetUtils.isWifi(getActivity())) {
+                                ToastUtils.showShortToast("无线网连接");
+                            }
+                        } else {
+//                            NetUtils.openSetting(getActivity());
+                        }
                         break;
                     default:
                         break;
