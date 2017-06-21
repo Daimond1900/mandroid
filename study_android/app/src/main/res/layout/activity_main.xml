@@ -25,10 +25,11 @@
             android:text="页面切换" />
 
         <Button
+            android:id="@+id/softkey_seach_bt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="测试" />
+            android:text="搜索键" />
 
         <Button
             android:layout_width="match_parent"

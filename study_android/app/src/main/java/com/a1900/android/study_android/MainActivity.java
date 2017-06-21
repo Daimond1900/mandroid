@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.a1900.android.study_android.study.fragment.list.CrimeListActivity;
+import com.a1900.android.study_android.study.seachedit.SoftkyLayoutActivity;
 import com.a1900.android.study_android.study.statelayout.StateLayoutActivity;
 import com.allen.apputils.MLog;
 import com.allen.apputils.ToastUtils;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     Button mStudyFragmentButton;
     @BindView(R.id.study_statelayout_button)
     Button mStudyStatelayoutButton;
+    @BindView(R.id.softkey_seach_bt)
+    Button mSoftkeySeachBt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         ToastUtils.init(true);
     }
 
-    @OnClick({R.id.study_fragment_button, R.id.study_statelayout_button})
+    @OnClick({R.id.study_fragment_button, R.id.study_statelayout_button,R.id.softkey_seach_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.study_fragment_button:
@@ -41,8 +44,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.study_statelayout_button:
                 startActivity(StateLayoutActivity.getIntent(this));
                 break;
+            case R.id.softkey_seach_bt:
+                startActivity(SoftkyLayoutActivity.getIntent(this));
+                break;
             default:
                 break;
         }
     }
+
 }
