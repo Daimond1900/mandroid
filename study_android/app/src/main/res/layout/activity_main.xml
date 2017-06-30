@@ -6,36 +6,49 @@
     android:layout_height="match_parent"
     tools:context="com.a1900.android.study_android.MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/study_fragment_button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="学习碎片" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/study_statelayout_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="页面切换" />
+            <Button
+                android:id="@+id/study_fragment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="学习碎片" />
 
-        <Button
-            android:id="@+id/softkey_seach_bt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="搜索键" />
+            <Button
+                android:id="@+id/study_statelayout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="页面切换" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="测试" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/softkey_seach_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="搜索键" />
 
+            <Button
+                android:id="@+id/m2jxl_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="二级下拉" />
+
+            <Button
+                android:id="@+id/customSpinner_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CustomSpinner" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

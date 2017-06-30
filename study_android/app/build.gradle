@@ -38,4 +38,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
     compile 'com.classic.common:multiple-status-view:1.2'
 //    compile 'com.ljs:LovelyProgressBar:1.0.0'
+    compile 'com.github.piotrek1543:CustomSpinner:0.1'
 }

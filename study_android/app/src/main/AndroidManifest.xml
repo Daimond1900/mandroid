@@ -23,6 +23,9 @@
             android:parentActivityName=".study.fragment.list.CrimeListActivity" />
         <activity android:name=".study.statelayout.StateLayoutActivity"></activity>
         <activity android:name=".study.seachedit.SoftkyLayoutActivity"></activity>
+        <activity android:name=".study.erjxlk.M2jLayoutActivity"></activity>
+        <activity android:name=".CustomSpinnerActivity"></activity>
+
     </application>
 
 </manifest>
