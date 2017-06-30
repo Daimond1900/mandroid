@@ -10,6 +10,9 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -22,6 +25,11 @@ import com.a1900.android.study_android.study.fragment.dialog.DatePickerFragment;
 import com.a1900.android.study_android.study.fragment.model.Crime;
 import com.a1900.android.study_android.study.fragment.model.CrimeLab;
 import com.allen.apputils.DateTimeUtil;
+import com.allen.apputils.ToastUtils;
+import com.allen.apputils.Utils;
+
+import java.util.Date;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,6 +44,8 @@ public class CrimeFragment extends Fragment {
     public static final String RETURN_EXTRA_POSTION = "com.a1900.android.study_android.study.fragment.details.CrimeFragment.return.position";
     private static final String TAG = "CrimeFragment";
     private static final String DIALOG_DATE = "DialogDate";
+    private static final String DIALOG_TIME = "DialogTime";
+    private static final int REQUEST_DATE = 0;
     @BindView(R.id.crime_title)
     EditText mCrimeTitle;
     Unbinder unbinder;
@@ -61,6 +71,7 @@ public class CrimeFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mCrime = CrimeLab.get(getActivity()).getCrimeList().get(getArguments().getInt(ARG_EXTRA_INFO));
         returnResult();
+        setHasOptionsMenu(true);
     }
 
     @Nullable
@@ -91,14 +102,16 @@ public class CrimeFragment extends Fragment {
             }
         });
         // 时间按钮的设置
-        mCrimeDate.setText(DateTimeUtil.formatDateTime0(mCrime.getmDate().getTime()));
+        updateDate();
 //        mCrimeDate.setEnabled(false); /*禁用按钮*/
+
 
         mCrimeDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fm = getFragmentManager();
-                DatePickerFragment df = new DatePickerFragment();
+                DatePickerFragment df = DatePickerFragment.newInstance(mCrime.getmDate());
+                df.setTargetFragment(CrimeFragment.this, REQUEST_DATE);  //设置了一个目标fragment，需要从这个f中返回数据
                 df.show(fm, DIALOG_DATE);
             }
         });
@@ -111,6 +124,23 @@ public class CrimeFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    private void updateDate() {
+        mCrimeDate.setText(DateTimeUtil.formatDateTime0(mCrime.getmDate().getTime()));
+    }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != Activity.RESULT_OK) {
+            return;
+        }
+        if (requestCode == REQUEST_DATE) {
+            Date date = (Date) data.getSerializableExtra(DatePickerFragment.EXTRA_DATE);
+            mCrime.setmDate(date);
+            updateDate();
+        }
     }
 
     /**
@@ -133,5 +163,32 @@ public class CrimeFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         unbinder.unbind();
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.fragment_crime_delete, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_delete_crime:
+                Utils.init(getActivity());
+                ToastUtils.init(true);
+                ToastUtils.showShortToast("删除");
+                deleteCrime(returnPostion);
+                getActivity().finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void deleteCrime(int index) {
+        CrimeLab crimeLab = CrimeLab.get(getActivity());
+        List<Crime> crimeList = crimeLab.getCrimeList();
+        crimeList.remove(index);
     }
 }

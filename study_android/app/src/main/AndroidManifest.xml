@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.a1900.android.study_android">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" ></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,9 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".study.fragment.details.CrimeActivity"></activity>
-        <activity android:name=".study.fragment.list.CrimeListActivity"></activity>
-        <activity android:name=".study.fragment.details_view_pager.CrimePagerActivity"></activity>
+        <activity android:name=".study.fragment.list.CrimeListActivity" />
+        <activity
+            android:name=".study.fragment.details_view_pager.CrimePagerActivity"
+            android:parentActivityName=".study.fragment.list.CrimeListActivity" />
+        <activity android:name=".study.statelayout.StateLayoutActivity"></activity>
+        <activity android:name=".study.seachedit.SoftkyLayoutActivity"></activity>
+        <activity android:name=".study.erjxlk.M2jLayoutActivity"></activity>
+        <activity android:name=".CustomSpinnerActivity"></activity>
+
     </application>
 
 </manifest>

@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 
 import com.a1900.android.study_android.R;
 import com.a1900.android.study_android.study.fragment.details.CrimeFragment;
@@ -25,7 +25,7 @@ import butterknife.ButterKnife;
  * Created by 1900 on 2017/6/17.
  */
 
-public class CrimePagerActivity extends FragmentActivity {
+public class CrimePagerActivity extends AppCompatActivity {
     private static final String EXTRA_LIST_TO_DETAILS_TAG = "com.a1900.android.study_android.study.fragment.details_view_pager.tag.position";
     private static final String TAG = "CrimePagerActivity";
 

@@ -27,18 +27,11 @@ public class CrimeLab {
     private CrimeLab(Context context) {
         /*组装数据*/
         crimeList = new ArrayList<>();
-
-        /*-------------start 模拟Crime对象------------*/
-        for (int i = 0; i < 100; i++) {
-            Crime crime = new Crime();
-            crime.setmTitle("Crime #" + i);
-            crime.setmSolved(i % 2 == 0);
-            crimeList.add(crime);
-        }
-        /*-------------end 模拟Crime对象------------*/
     }
 
-
+    public void addCrime(Crime crime) {
+        crimeList.add(crime);
+    }
     //--------------对外提供，获取数据的接口
 
     /*
