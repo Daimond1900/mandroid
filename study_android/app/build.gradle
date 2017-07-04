@@ -39,4 +39,6 @@ dependencies {
     compile 'com.classic.common:multiple-status-view:1.2'
 //    compile 'com.ljs:LovelyProgressBar:1.0.0'
     compile 'com.github.piotrek1543:CustomSpinner:0.1'
+
+    compile 'com.github.open-android:BaseRecyclerAndAdapter:0.5.13'
 }

@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
     Button mM2jxlBt;
     @BindView(R.id.customSpinner_bt)
     Button mCustomSpinner_bt;
-
+    @BindView(R.id.baseRecyclerAdapter_bt)
+    Button baseRecyclerAdapterBt;
 
 
     @Override
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         ToastUtils.init(true);
     }
 
-    @OnClick({R.id.study_fragment_button, R.id.study_statelayout_button, R.id.softkey_seach_bt, R.id.m2jxl_bt,R.id.customSpinner_bt})
+    @OnClick({R.id.study_fragment_button, R.id.study_statelayout_button, R.id.softkey_seach_bt, R.id.m2jxl_bt, R.id.customSpinner_bt,R.id.baseRecyclerAdapter_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.study_fragment_button:
@@ -60,9 +61,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.customSpinner_bt:
                 startActivity(CustomSpinnerActivity.getIntent(this));
                 break;
+            case R.id.baseRecyclerAdapter_bt:
+                startActivity(BaseRecyclerAdapterActivity.getIntent(this));
+                break;
             default:
                 break;
         }
     }
-
 }
