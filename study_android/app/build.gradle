@@ -1,5 +1,12 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'     // GreenDao
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.a1900.android.study_android.greendao'
+    targetGenDir 'src/main/java'
+}
 
 android {
     compileSdkVersion 25
@@ -16,6 +23,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            resValue("string" , "PORT_NUMBER" , "8081")
         }
     }
 }
@@ -41,4 +51,12 @@ dependencies {
     compile 'com.github.piotrek1543:CustomSpinner:0.1'
 
     compile 'com.github.open-android:BaseRecyclerAndAdapter:0.5.13'
+
+    compile 'com.github.open-android:LoopViewPager:2.0.0'
+
+    // GreenDao
+    compile 'org.greenrobot:greendao:3.0.1'
+    compile 'org.greenrobot:greendao-generator:3.0.0'
+
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
 }

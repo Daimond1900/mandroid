@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     Button mCustomSpinner_bt;
     @BindView(R.id.baseRecyclerAdapter_bt)
     Button baseRecyclerAdapterBt;
+    @BindView(R.id.greendao_bt)
+    Button mGreendaoBt;
 
 
     @Override
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         ToastUtils.init(true);
     }
 
-    @OnClick({R.id.study_fragment_button, R.id.study_statelayout_button, R.id.softkey_seach_bt, R.id.m2jxl_bt, R.id.customSpinner_bt,R.id.baseRecyclerAdapter_bt})
+    @OnClick({R.id.greendao_bt,R.id.study_fragment_button, R.id.study_statelayout_button, R.id.softkey_seach_bt, R.id.m2jxl_bt, R.id.customSpinner_bt, R.id.baseRecyclerAdapter_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.study_fragment_button:
@@ -64,8 +66,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.baseRecyclerAdapter_bt:
                 startActivity(BaseRecyclerAdapterActivity.getIntent(this));
                 break;
+            case R.id.greendao_bt:
+                startActivity(StudyGreenDaoActivity.getIntent(this));
+                break;
             default:
                 break;
         }
     }
+
 }
