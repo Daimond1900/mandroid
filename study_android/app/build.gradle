@@ -38,6 +38,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
     compile 'com.orhanobut:logger:1.15'
     compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.5'
     compile 'com.android.support:recyclerview-v7:25.3.1'
@@ -45,7 +46,7 @@ dependencies {
 //    compile 'com.github.gturedi:stateful-layout:1.2.1'
     testCompile 'junit:junit:4.12'
 //    compile 'com.github.vlonjatg:progress-activity:v2.0.3'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
     compile 'com.classic.common:multiple-status-view:1.2'
 //    compile 'com.ljs:LovelyProgressBar:1.0.0'
     compile 'com.github.piotrek1543:CustomSpinner:0.1'
@@ -59,4 +60,5 @@ dependencies {
     compile 'org.greenrobot:greendao-generator:3.0.0'
 
     debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
+
 }
