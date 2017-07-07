@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ocn.ourcookies.MainActivity">
+
+    <com.heima.tabview.library.TabView
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_tabViewBackgroundColor="#f6f6f6"
+        app:tab_textViewSelColor="#5CC4EA"></com.heima.tabview.library.TabView>
+
+</LinearLayout>
