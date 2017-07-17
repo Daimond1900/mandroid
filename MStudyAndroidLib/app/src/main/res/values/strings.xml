@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MStudyAndroidLib</string>
+    <string name="test_dialog_lib">提示框测试</string>
+    <string name="normal_dialog_default">通用的，两个按钮的</string>
+    <string name="test_loading_image_lib">图片加载缓存处理测试</string>
+    <string name="test_ui_state_change_bt">UI状态改变测试</string>
+    <string name="test_loading_bt">加载</string>
+    <string name="test_error_bt">错误</string>
+    <string name="test_empty_bt">空</string>
+    <string name="test_no_net_bt">无网</string>
+    <string name="test_context_bt">正文</string>
+    <string name="test_permission_bt">权限动态申请测试</string>
+    <string name="test_loading_dialog_bt">自定义加载提示框</string>
+</resources>

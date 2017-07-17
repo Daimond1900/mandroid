@@ -1,54 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:progressActivity="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:orientation="horizontal"
+        android:weightSum="5">
 
         <Button
-            android:id="@+id/loading_bt"
+            android:id="@+id/test_loading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="加载" />
+            android:text="@string/test_loading_bt" />
 
         <Button
-            android:id="@+id/empty_bt"
+            android:id="@+id/test_error"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="暂无" />
+            android:text="@string/test_error_bt" />
 
         <Button
-            android:id="@+id/error_bt"
+            android:id="@+id/test_empty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="错误" />
+            android:text="@string/test_empty_bt" />
 
         <Button
-            android:id="@+id/no_network_bt"
+            android:id="@+id/test_no_net"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="网络" />
+            android:text="@string/test_no_net_bt" />
 
         <Button
-            android:id="@+id/context_bt"
+            android:id="@+id/test_context"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="内容" />
-
-
+            android:text="@string/test_context_bt" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent" />
 
     <com.classic.common.MultipleStatusView
         android:id="@+id/main_multiplestatusview"

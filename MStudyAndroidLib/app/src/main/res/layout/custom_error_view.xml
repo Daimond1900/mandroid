@@ -14,6 +14,6 @@
 
     <TextView
         android:id="@+id/error_view_tv"
-        style="@style/StateView_Content"
+        style="@style/MultipleStatusView.Content"
         android:text="@string/error_view_hint" />
 </LinearLayout>
