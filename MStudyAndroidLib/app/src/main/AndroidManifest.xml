@@ -38,7 +38,7 @@
         </activity>
         <activity android:name=".MyTestDialog"></activity>
         <activity android:name=".MyTestStateLayout"></activity>
-
+        <activity android:name=".StudyDesignActivity"></activity>
     </application>
 
 </manifest>

@@ -1,43 +1,83 @@
 package com.ocn.ourcookies;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
-import com.heima.tabview.library.TabView;
-import com.heima.tabview.library.TabViewChild;
+import com.ocn.ourcookies.adapter.TabAdapter;
+import com.ocn.ourcookies.fragment.Test_1Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    @BindView(R.id.home_tab)
+    TabLayout mHomeTab;
+    @BindView(R.id.home_pager)
+    ViewPager mHomePager;
+    @BindView(R.id.toolbar)
+    Toolbar mToolbar;
+    @BindView(R.id.navigation)
+    NavigationView mNavigation;
+    @BindView(R.id.drawer)
+    DrawerLayout mDdrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+        initTabPager();
 
-        List<TabViewChild> tabViewChildList = new ArrayList<>();
-        TabViewChild tabViewChild01 = new TabViewChild(R.drawable.ic_action_botom_1, R.drawable.ic_action_botom_1_1, "首页", HomePageFragment.newInstance());
-        TabViewChild tabViewChild02 = new TabViewChild(R.drawable.ic_action_botom_1, R.drawable.ic_action_botom_1_1, "等待", HomePageFragment.newInstance());
-        TabViewChild tabViewChild03 = new TabViewChild(R.drawable.ic_action_botom_1, R.drawable.ic_action_botom_1_1, "等待", HomePageFragment.newInstance());
-        TabViewChild tabViewChild04 = new TabViewChild(R.drawable.ic_action_botom_1, R.drawable.ic_action_botom_1_1, "等待", HomePageFragment.newInstance());
-        TabViewChild tabViewChild05 = new TabViewChild(R.drawable.ic_action_botom_1, R.drawable.ic_action_botom_1_1, "等待", HomePageFragment.newInstance());
-        tabViewChildList.add(tabViewChild01);
-        tabViewChildList.add(tabViewChild02);
-        tabViewChildList.add(tabViewChild03);
-        tabViewChildList.add(tabViewChild04);
-        tabViewChildList.add(tabViewChild05);
+        initToolbar();
+    }
 
-        TabView tabView = (TabView) findViewById(R.id.tabView);
-        tabView.setTabViewChild(tabViewChildList, getSupportFragmentManager());
-        tabView.setOnTabChildClickListener(new TabView.OnTabChildClickListener() {
-            @Override
-            public void onTabChildClick(int position, ImageView imageView, TextView textView) {
-                Toast.makeText(MainActivity.this, ""+position,Toast.LENGTH_SHORT).show();
-            }
-        });
+    private void initToolbar() {
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, mDdrawer, mToolbar, 0, 0);
+        mDdrawer.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+        mNavigation.setNavigationItemSelectedListener(this);
+    }
+
+    private void initTabPager() {
+        List<String> tabTexts = new ArrayList<>();  // 导航页标题
+        List<Fragment> pagerView = new ArrayList<>();// 对应导航的fragment
+
+        tabTexts.add("测试一");
+        tabTexts.add("测试二");
+        tabTexts.add("测试三");
+        tabTexts.add("测试四");
+
+        Fragment fragment_1 = Test_1Fragment.newInstance("测试一");
+        Fragment fragment_2 = Test_1Fragment.newInstance("测试二");
+        Fragment fragment_3 = Test_1Fragment.newInstance("测试三");
+        Fragment fragment_4 = Test_1Fragment.newInstance("测试四");
+        pagerView.add(fragment_1);
+        pagerView.add(fragment_2);
+        pagerView.add(fragment_3);
+        pagerView.add(fragment_4);
+
+        TabAdapter tabAdapter = new TabAdapter(getSupportFragmentManager(), tabTexts, pagerView);
+        mHomePager.setAdapter(tabAdapter);
+        mHomeTab.setupWithViewPager(mHomePager);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return true;
     }
 }
