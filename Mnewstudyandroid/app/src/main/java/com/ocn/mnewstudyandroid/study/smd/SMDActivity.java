@@ -9,6 +9,7 @@ import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -42,6 +43,8 @@ public class SMDActivity extends AppCompatActivity {
     FloatingActionButton mFab;
     @BindView(R.id.recyclerview_view)
     RecyclerView mRecyclerviewView;
+    @BindView(R.id.swipe_refresh)
+    SwipeRefreshLayout mSwipeRefresh;
 
     private Fruit[] fruits = {new Fruit("橙子", R.mipmap.timgnew),
             new Fruit("苹果", R.mipmap.p1),
@@ -85,11 +88,39 @@ public class SMDActivity extends AppCompatActivity {
         mRecyclerviewView.setLayoutManager(gridLayoutManager);
         mFruitAdapter = new FruitAdapter(mFruitList);
         mRecyclerviewView.setAdapter(mFruitAdapter);
+        mSwipeRefresh.setColorSchemeResources(R.color.colorPrimary);
+        mSwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refreshFruits();
+            }
+        });
+    }
+
+    private void refreshFruits() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        initFruits();
+                        mFruitAdapter.notifyDataSetChanged();
+                        mSwipeRefresh.setRefreshing(false);
+                    }
+                });
+            }
+        }).start();
     }
 
     private void initFruits() {
         mFruitList.clear();
-        for (int i=0;i<50;i++){
+        for (int i = 0; i < 50; i++) {
             Random random = new Random();
             int index = random.nextInt(fruits.length);
             mFruitList.add(fruits[index]);

@@ -1,6 +1,7 @@
 package com.ocn.mnewstudyandroid.study.smd;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.ocn.mnewstudyandroid.R;
@@ -52,7 +52,10 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
             public void onClick(View view) {
                 int adapterPosition = holder.getAdapterPosition();
                 Fruit fruit = mFruitList.get(adapterPosition);
-                Toast.makeText(mContext, "你点击了" + fruit.getName(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mContext, FruitsActivity.class);
+                intent.putExtra(FruitsActivity.FRUIT_NAME,fruit.getName());
+                intent.putExtra(FruitsActivity.FRUIT_IMAGE_ID,fruit.getImageId());
+                mContext.startActivity(intent);
             }
         });
         return holder;
