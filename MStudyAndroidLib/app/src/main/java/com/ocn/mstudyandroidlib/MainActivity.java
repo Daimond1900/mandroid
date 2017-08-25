@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
     Button mTestLoadingDialogBt;
     @BindView(R.id.test_design_bt)
     Button mTestDesignBt;
+    @BindView(R.id.test_share_bt)
+    Button mTestShareBt;
     private BaseAnimatorSet mBasIn;
     private BaseAnimatorSet mBasOut;
 
@@ -128,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         }).check();
     }
 
-    @OnClick({R.id.test_design_bt,R.id.test_loading_dialog_bt, R.id.test_permission_bt, R.id.test_dialog_bt, R.id.test_loading_image_lib_bt, R.id.test_ui_state_change_bt})
+    @OnClick({R.id.test_design_bt, R.id.test_loading_dialog_bt, R.id.test_permission_bt, R.id.test_dialog_bt, R.id.test_loading_image_lib_bt, R.id.test_ui_state_change_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.test_dialog_bt:   // 测试dialog
@@ -177,6 +179,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.test_design_bt:
                 startActivity(StudyDesignActivity.newIntent(this));
+                break;
+            case R.id.test_share_bt:
+
                 break;
             default:
                 break;

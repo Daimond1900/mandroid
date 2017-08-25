@@ -32,6 +32,8 @@ dependencies {
     /*UI状态改变*/
     /*正在加载的动画图标*/
     /*权限动态申请*/
+    //必需
+    //非必需
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.7.0'
