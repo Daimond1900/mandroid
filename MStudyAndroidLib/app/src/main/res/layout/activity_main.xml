@@ -64,6 +64,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/test_share_bt" />
+
+            <Button
+                android:id="@+id/test_broadcast_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_broadcast_bt" />
+
+            <Button
+                android:id="@+id/test_permission1_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_permission_bt" />
+
+            <Button
+                android:id="@+id/test_other_provider_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_other_provider_bt" />
+
         </LinearLayout>
     </ScrollView>
 

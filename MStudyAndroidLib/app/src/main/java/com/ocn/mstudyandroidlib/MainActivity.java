@@ -59,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
     Button mTestDesignBt;
     @BindView(R.id.test_share_bt)
     Button mTestShareBt;
+    @BindView(R.id.test_broadcast_bt)
+    Button mTestBroadcastBt;
+    @BindView(R.id.test_permission1_bt)
+    Button mTestPermission1Bt;
+    @BindView(R.id.test_other_provider_bt)
+    Button mTtestOtherProviderBt;
     private BaseAnimatorSet mBasIn;
     private BaseAnimatorSet mBasOut;
 
@@ -130,7 +136,15 @@ public class MainActivity extends AppCompatActivity {
         }).check();
     }
 
-    @OnClick({R.id.test_design_bt, R.id.test_loading_dialog_bt, R.id.test_permission_bt, R.id.test_dialog_bt, R.id.test_loading_image_lib_bt, R.id.test_ui_state_change_bt})
+    @OnClick({R.id.test_design_bt,
+            R.id.test_other_provider_bt,
+            R.id.test_permission1_bt,
+            R.id.test_loading_dialog_bt,
+            R.id.test_permission_bt,
+            R.id.test_dialog_bt,
+            R.id.test_loading_image_lib_bt,
+            R.id.test_ui_state_change_bt,
+            R.id.test_broadcast_bt})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.test_dialog_bt:   // 测试dialog
@@ -183,11 +197,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.test_share_bt:
 
                 break;
+            case R.id.test_broadcast_bt:
+                startActivity(BroadCastTestActivity.getInstance(this));
+                break;
+            case R.id.test_permission1_bt:
+                startActivity(RunPremissionActivity.getInstance(this));
+                break;
+            case R.id.test_other_provider_bt:
+                startActivity(ContactsTestActivity.getInstance(this));
+                break;
             default:
                 break;
         }
     }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         PermissionGen.onRequestPermissionsResult(this, requestCode, permissions, grantResults);

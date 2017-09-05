@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mnewstudyandroid</string>
+    <string name="study_notification">通知</string>
+    <string name="send_notification_info">发送通知</string>
+    <string name="study_take_photo">拍照</string>
+    <string name="study_material_design">学习MD</string>
+</resources>

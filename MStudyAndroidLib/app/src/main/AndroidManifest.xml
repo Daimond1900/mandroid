@@ -21,7 +21,9 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,8 +41,30 @@
         <activity android:name=".MyTestDialog" />
         <activity android:name=".MyTestStateLayout" />
         <activity android:name=".StudyDesignActivity" />
-
         <activity android:name=".ShareActivity" />
+        <activity android:name=".BroadCastTestActivity" />
+
+        <receiver
+            android:name=".BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ocn.mstudyandroidlib.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainTestActivity" />
+        <activity android:name=".RunPremissionActivity" />
+        <activity android:name=".ContactsTestActivity"/>
     </application>
 
 </manifest>

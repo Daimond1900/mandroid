@@ -1,0 +1,1757 @@
+[
+    {
+        "outputFile": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 45,
+                        "endOffset": 96
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 101,
+                    "endColumn": 86,
+                    "endOffset": 183
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endColumn": 86,
+                        "endOffset": 183
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 188,
+                    "endColumn": 53,
+                    "endOffset": 237
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 53,
+                        "endOffset": 237
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 242,
+                    "endColumn": 45,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 242,
+                        "endColumn": 45,
+                        "endOffset": 283
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 288,
+                    "endColumn": 44,
+                    "endOffset": 328
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 288,
+                        "endColumn": 44,
+                        "endOffset": 328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 333,
+                    "endColumn": 125,
+                    "endOffset": 454
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 333,
+                        "endColumn": 125,
+                        "endOffset": 454
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 459,
+                    "endColumn": 42,
+                    "endOffset": 497
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 459,
+                        "endColumn": 42,
+                        "endOffset": 497
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 502,
+                    "endColumn": 48,
+                    "endOffset": 546
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 502,
+                        "endColumn": 48,
+                        "endOffset": 546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 551,
+                    "endColumn": 41,
+                    "endOffset": 588
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 551,
+                        "endColumn": 41,
+                        "endOffset": 588
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 593,
+                    "endColumn": 46,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 593,
+                        "endColumn": 46,
+                        "endOffset": 635
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 50,
+                    "endOffset": 686
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 640,
+                        "endColumn": 50,
+                        "endOffset": 686
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 691,
+                    "endColumn": 69,
+                    "endOffset": 756
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 691,
+                        "endColumn": 69,
+                        "endOffset": 756
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 761,
+                    "endColumn": 108,
+                    "endOffset": 865
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 761,
+                        "endColumn": 108,
+                        "endOffset": 865
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 870,
+                    "endColumn": 46,
+                    "endOffset": 912
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 870,
+                        "endColumn": 46,
+                        "endOffset": 912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 917,
+                    "endColumn": 54,
+                    "endOffset": 967
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 917,
+                        "endColumn": 54,
+                        "endOffset": 967
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 972,
+                    "endColumn": 48,
+                    "endOffset": 1016
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 972,
+                        "endColumn": 48,
+                        "endOffset": 1016
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1021,
+                    "endColumn": 46,
+                    "endOffset": 1063
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1021,
+                        "endColumn": 46,
+                        "endOffset": 1063
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1068,
+                    "endColumn": 102,
+                    "endOffset": 1166
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1068,
+                        "endColumn": 102,
+                        "endOffset": 1166
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1171,
+                    "endColumn": 51,
+                    "endOffset": 1218
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1171,
+                        "endColumn": 51,
+                        "endOffset": 1218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1223,
+                    "endColumn": 52,
+                    "endOffset": 1271
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1223,
+                        "endColumn": 52,
+                        "endOffset": 1271
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1276,
+                    "endColumn": 103,
+                    "endOffset": 1375
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1276,
+                        "endColumn": 103,
+                        "endOffset": 1375
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1380,
+                    "endColumn": 83,
+                    "endOffset": 1459
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1380,
+                        "endColumn": 83,
+                        "endOffset": 1459
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1464,
+                    "endLine": 89,
+                    "endColumn": 9,
+                    "endOffset": 3344
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1464,
+                        "endLine": 89,
+                        "endColumn": 9,
+                        "endOffset": 3344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 3349,
+                    "endColumn": 54,
+                    "endOffset": 3399
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 4,
+                        "startOffset": 3349,
+                        "endColumn": 54,
+                        "endOffset": 3399
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 3404,
+                    "endColumn": 52,
+                    "endOffset": 3452
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 3404,
+                        "endColumn": 52,
+                        "endOffset": 3452
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 3457,
+                    "endColumn": 52,
+                    "endOffset": 3505
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 3457,
+                        "endColumn": 52,
+                        "endOffset": 3505
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 3510,
+                    "endColumn": 57,
+                    "endOffset": 3563
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 4,
+                        "startOffset": 3510,
+                        "endColumn": 57,
+                        "endOffset": 3563
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 3568,
+                    "endColumn": 50,
+                    "endOffset": 3614
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 3568,
+                        "endColumn": 50,
+                        "endOffset": 3614
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 3619,
+                    "endColumn": 43,
+                    "endOffset": 3658
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 4,
+                        "startOffset": 3619,
+                        "endColumn": 43,
+                        "endOffset": 3658
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 3663,
+                    "endColumn": 54,
+                    "endOffset": 3713
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 3663,
+                        "endColumn": 54,
+                        "endOffset": 3713
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 3718,
+                    "endColumn": 104,
+                    "endOffset": 3818
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 4,
+                        "startOffset": 3718,
+                        "endColumn": 104,
+                        "endOffset": 3818
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 3823,
+                    "endColumn": 52,
+                    "endOffset": 3871
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 4,
+                        "startOffset": 3823,
+                        "endColumn": 52,
+                        "endOffset": 3871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 3876,
+                    "endColumn": 101,
+                    "endOffset": 3973
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 4,
+                        "startOffset": 3876,
+                        "endColumn": 101,
+                        "endOffset": 3973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 3978,
+                    "endColumn": 43,
+                    "endOffset": 4017
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 100,
+                        "startColumn": 4,
+                        "startOffset": 3978,
+                        "endColumn": 43,
+                        "endOffset": 4017
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 4022,
+                    "endColumn": 85,
+                    "endOffset": 4103
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 4022,
+                        "endColumn": 85,
+                        "endOffset": 4103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 4108,
+                    "endColumn": 52,
+                    "endOffset": 4156
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 4108,
+                        "endColumn": 52,
+                        "endOffset": 4156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 4161,
+                    "endColumn": 42,
+                    "endOffset": 4199
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 4,
+                        "startOffset": 4161,
+                        "endColumn": 42,
+                        "endOffset": 4199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 4204,
+                    "endColumn": 86,
+                    "endOffset": 4286
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 4204,
+                        "endColumn": 86,
+                        "endOffset": 4286
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 4291,
+                    "endColumn": 44,
+                    "endOffset": 4331
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 105,
+                        "startColumn": 4,
+                        "startOffset": 4291,
+                        "endColumn": 44,
+                        "endOffset": 4331
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 4336,
+                    "endColumn": 42,
+                    "endOffset": 4374
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 106,
+                        "startColumn": 4,
+                        "startOffset": 4336,
+                        "endColumn": 42,
+                        "endOffset": 4374
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 107,
+                    "startColumn": 4,
+                    "startOffset": 4379,
+                    "endColumn": 43,
+                    "endOffset": 4418
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 107,
+                        "startColumn": 4,
+                        "startOffset": 4379,
+                        "endColumn": 43,
+                        "endOffset": 4418
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 108,
+                    "startColumn": 4,
+                    "startOffset": 4423,
+                    "endColumn": 59,
+                    "endOffset": 4478
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 4,
+                        "startOffset": 4423,
+                        "endColumn": 59,
+                        "endOffset": 4478
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 109,
+                    "startColumn": 4,
+                    "startOffset": 4483,
+                    "endColumn": 54,
+                    "endOffset": 4533
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 4,
+                        "startOffset": 4483,
+                        "endColumn": 54,
+                        "endOffset": 4533
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 110,
+                    "startColumn": 4,
+                    "startOffset": 4538,
+                    "endColumn": 52,
+                    "endOffset": 4586
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 4538,
+                        "endColumn": 52,
+                        "endOffset": 4586
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 4591,
+                    "endColumn": 103,
+                    "endOffset": 4690
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 111,
+                        "startColumn": 4,
+                        "startOffset": 4591,
+                        "endColumn": 103,
+                        "endOffset": 4690
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 4695,
+                    "endColumn": 44,
+                    "endOffset": 4735
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 112,
+                        "startColumn": 4,
+                        "startOffset": 4695,
+                        "endColumn": 44,
+                        "endOffset": 4735
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 113,
+                    "startColumn": 4,
+                    "startOffset": 4740,
+                    "endColumn": 46,
+                    "endOffset": 4782
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 113,
+                        "startColumn": 4,
+                        "startOffset": 4740,
+                        "endColumn": 46,
+                        "endOffset": 4782
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 114,
+                    "startColumn": 4,
+                    "startOffset": 4787,
+                    "endColumn": 38,
+                    "endOffset": 4821
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 114,
+                        "startColumn": 4,
+                        "startOffset": 4787,
+                        "endColumn": 38,
+                        "endOffset": 4821
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 115,
+                    "startColumn": 4,
+                    "startOffset": 4826,
+                    "endColumn": 83,
+                    "endOffset": 4905
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 4,
+                        "startOffset": 4826,
+                        "endColumn": 83,
+                        "endOffset": 4905
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 116,
+                    "startColumn": 4,
+                    "startOffset": 4910,
+                    "endColumn": 43,
+                    "endOffset": 4949
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 116,
+                        "startColumn": 4,
+                        "startOffset": 4910,
+                        "endColumn": 43,
+                        "endOffset": 4949
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 117,
+                    "startColumn": 4,
+                    "startOffset": 4954,
+                    "endColumn": 43,
+                    "endOffset": 4993
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 117,
+                        "startColumn": 4,
+                        "startOffset": 4954,
+                        "endColumn": 43,
+                        "endOffset": 4993
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 118,
+                    "startColumn": 4,
+                    "startOffset": 4998,
+                    "endColumn": 56,
+                    "endOffset": 5050
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 118,
+                        "startColumn": 4,
+                        "startOffset": 4998,
+                        "endColumn": 56,
+                        "endOffset": 5050
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 5055,
+                    "endColumn": 73,
+                    "endOffset": 5124
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 119,
+                        "startColumn": 4,
+                        "startOffset": 5055,
+                        "endColumn": 73,
+                        "endOffset": 5124
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 120,
+                    "startColumn": 4,
+                    "startOffset": 5129,
+                    "endColumn": 60,
+                    "endOffset": 5185
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 120,
+                        "startColumn": 4,
+                        "startOffset": 5129,
+                        "endColumn": 60,
+                        "endOffset": 5185
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 121,
+                    "startColumn": 4,
+                    "startOffset": 5190,
+                    "endColumn": 58,
+                    "endOffset": 5244
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 121,
+                        "startColumn": 4,
+                        "startOffset": 5190,
+                        "endColumn": 58,
+                        "endOffset": 5244
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 122,
+                    "startColumn": 4,
+                    "startOffset": 5249,
+                    "endColumn": 62,
+                    "endOffset": 5307
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 122,
+                        "startColumn": 4,
+                        "startOffset": 5249,
+                        "endColumn": 62,
+                        "endOffset": 5307
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 123,
+                    "startColumn": 4,
+                    "startOffset": 5312,
+                    "endColumn": 63,
+                    "endOffset": 5371
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 4,
+                        "startOffset": 5312,
+                        "endColumn": 63,
+                        "endOffset": 5371
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 124,
+                    "startColumn": 4,
+                    "startOffset": 5376,
+                    "endColumn": 55,
+                    "endOffset": 5427
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 124,
+                        "startColumn": 4,
+                        "startOffset": 5376,
+                        "endColumn": 55,
+                        "endOffset": 5427
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 125,
+                    "startColumn": 4,
+                    "startOffset": 5432,
+                    "endColumn": 50,
+                    "endOffset": 5478
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 4,
+                        "startOffset": 5432,
+                        "endColumn": 50,
+                        "endOffset": 5478
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 5483,
+                    "endColumn": 55,
+                    "endOffset": 5534
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 126,
+                        "startColumn": 4,
+                        "startOffset": 5483,
+                        "endColumn": 55,
+                        "endOffset": 5534
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 5539,
+                    "endColumn": 63,
+                    "endOffset": 5598
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 127,
+                        "startColumn": 4,
+                        "startOffset": 5539,
+                        "endColumn": 63,
+                        "endOffset": 5598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 128,
+                    "startColumn": 4,
+                    "startOffset": 5603,
+                    "endColumn": 60,
+                    "endOffset": 5659
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 128,
+                        "startColumn": 4,
+                        "startOffset": 5603,
+                        "endColumn": 60,
+                        "endOffset": 5659
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 129,
+                    "startColumn": 4,
+                    "startOffset": 5664,
+                    "endColumn": 48,
+                    "endOffset": 5708
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 129,
+                        "startColumn": 4,
+                        "startOffset": 5664,
+                        "endColumn": 48,
+                        "endOffset": 5708
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 130,
+                    "startColumn": 4,
+                    "startOffset": 5713,
+                    "endColumn": 47,
+                    "endOffset": 5756
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 130,
+                        "startColumn": 4,
+                        "startOffset": 5713,
+                        "endColumn": 47,
+                        "endOffset": 5756
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 131,
+                    "startColumn": 4,
+                    "startOffset": 5761,
+                    "endColumn": 49,
+                    "endOffset": 5806
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 131,
+                        "startColumn": 4,
+                        "startOffset": 5761,
+                        "endColumn": 49,
+                        "endOffset": 5806
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 132,
+                    "startColumn": 4,
+                    "startOffset": 5811,
+                    "endColumn": 50,
+                    "endOffset": 5857
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 132,
+                        "startColumn": 4,
+                        "startOffset": 5811,
+                        "endColumn": 50,
+                        "endOffset": 5857
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 133,
+                    "startColumn": 4,
+                    "startOffset": 5862,
+                    "endColumn": 57,
+                    "endOffset": 5915
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 133,
+                        "startColumn": 4,
+                        "startOffset": 5862,
+                        "endColumn": 57,
+                        "endOffset": 5915
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 134,
+                    "startColumn": 4,
+                    "startOffset": 5920,
+                    "endColumn": 52,
+                    "endOffset": 5968
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 134,
+                        "startColumn": 4,
+                        "startOffset": 5920,
+                        "endColumn": 52,
+                        "endOffset": 5968
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 135,
+                    "startColumn": 4,
+                    "startOffset": 5973,
+                    "endColumn": 69,
+                    "endOffset": 6038
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 135,
+                        "startColumn": 4,
+                        "startOffset": 5973,
+                        "endColumn": 69,
+                        "endOffset": 6038
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 136,
+                    "startColumn": 4,
+                    "startOffset": 6043,
+                    "endColumn": 56,
+                    "endOffset": 6095
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 136,
+                        "startColumn": 4,
+                        "startOffset": 6043,
+                        "endColumn": 56,
+                        "endOffset": 6095
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 137,
+                    "startColumn": 4,
+                    "startOffset": 6100,
+                    "endColumn": 51,
+                    "endOffset": 6147
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 137,
+                        "startColumn": 4,
+                        "startOffset": 6100,
+                        "endColumn": 51,
+                        "endOffset": 6147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 138,
+                    "startColumn": 4,
+                    "startOffset": 6152,
+                    "endColumn": 53,
+                    "endOffset": 6201
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 138,
+                        "startColumn": 4,
+                        "startOffset": 6152,
+                        "endColumn": 53,
+                        "endOffset": 6201
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 139,
+                    "startColumn": 4,
+                    "startOffset": 6206,
+                    "endColumn": 52,
+                    "endOffset": 6254
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 139,
+                        "startColumn": 4,
+                        "startOffset": 6206,
+                        "endColumn": 52,
+                        "endOffset": 6254
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 140,
+                    "startColumn": 4,
+                    "startOffset": 6259,
+                    "endColumn": 50,
+                    "endOffset": 6305
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 140,
+                        "startColumn": 4,
+                        "startOffset": 6259,
+                        "endColumn": 50,
+                        "endOffset": 6305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 141,
+                    "startColumn": 4,
+                    "startOffset": 6310,
+                    "endColumn": 46,
+                    "endOffset": 6352
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 141,
+                        "startColumn": 4,
+                        "startOffset": 6310,
+                        "endColumn": 46,
+                        "endOffset": 6352
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 142,
+                    "startColumn": 4,
+                    "startOffset": 6357,
+                    "endColumn": 48,
+                    "endOffset": 6401
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 142,
+                        "startColumn": 4,
+                        "startOffset": 6357,
+                        "endColumn": 48,
+                        "endOffset": 6401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 143,
+                    "startColumn": 4,
+                    "startOffset": 6406,
+                    "endColumn": 59,
+                    "endOffset": 6461
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 143,
+                        "startColumn": 4,
+                        "startOffset": 6406,
+                        "endColumn": 59,
+                        "endOffset": 6461
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 6466,
+                    "endColumn": 45,
+                    "endOffset": 6507
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 144,
+                        "startColumn": 4,
+                        "startOffset": 6466,
+                        "endColumn": 45,
+                        "endOffset": 6507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 145,
+                    "startColumn": 4,
+                    "startOffset": 6512,
+                    "endColumn": 59,
+                    "endOffset": 6567
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 145,
+                        "startColumn": 4,
+                        "startOffset": 6512,
+                        "endColumn": 59,
+                        "endOffset": 6567
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 146,
+                    "startColumn": 4,
+                    "startOffset": 6572,
+                    "endColumn": 44,
+                    "endOffset": 6612
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 4,
+                        "startOffset": 6572,
+                        "endColumn": 44,
+                        "endOffset": 6612
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 147,
+                    "startColumn": 4,
+                    "startOffset": 6617,
+                    "endColumn": 86,
+                    "endOffset": 6699
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 147,
+                        "startColumn": 4,
+                        "startOffset": 6617,
+                        "endColumn": 86,
+                        "endOffset": 6699
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 148,
+                    "startColumn": 4,
+                    "startOffset": 6704,
+                    "endColumn": 52,
+                    "endOffset": 6752
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 4,
+                        "startOffset": 6704,
+                        "endColumn": 52,
+                        "endOffset": 6752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 149,
+                    "startColumn": 4,
+                    "startOffset": 6757,
+                    "endColumn": 52,
+                    "endOffset": 6805
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 149,
+                        "startColumn": 4,
+                        "startOffset": 6757,
+                        "endColumn": 52,
+                        "endOffset": 6805
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 150,
+                    "startColumn": 4,
+                    "startOffset": 6810,
+                    "endColumn": 59,
+                    "endOffset": 6865
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 150,
+                        "startColumn": 4,
+                        "startOffset": 6810,
+                        "endColumn": 59,
+                        "endOffset": 6865
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 6870,
+                    "endColumn": 58,
+                    "endOffset": 6924
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 151,
+                        "startColumn": 4,
+                        "startOffset": 6870,
+                        "endColumn": 58,
+                        "endOffset": 6924
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 152,
+                    "startColumn": 4,
+                    "startOffset": 6929,
+                    "endColumn": 50,
+                    "endOffset": 6975
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 152,
+                        "startColumn": 4,
+                        "startOffset": 6929,
+                        "endColumn": 50,
+                        "endOffset": 6975
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 153,
+                    "startColumn": 4,
+                    "startOffset": 6980,
+                    "endColumn": 98,
+                    "endOffset": 7074
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 153,
+                        "startColumn": 4,
+                        "startOffset": 6980,
+                        "endColumn": 98,
+                        "endOffset": 7074
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 7079,
+                    "endColumn": 41,
+                    "endOffset": 7116
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 154,
+                        "startColumn": 4,
+                        "startOffset": 7079,
+                        "endColumn": 41,
+                        "endOffset": 7116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 155,
+                    "startColumn": 4,
+                    "startOffset": 7121,
+                    "endColumn": 83,
+                    "endOffset": 7200
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 155,
+                        "startColumn": 4,
+                        "startOffset": 7121,
+                        "endColumn": 83,
+                        "endOffset": 7200
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 7205,
+                    "endColumn": 51,
+                    "endOffset": 7252
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 156,
+                        "startColumn": 4,
+                        "startOffset": 7205,
+                        "endColumn": 51,
+                        "endOffset": 7252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 7257,
+                    "endColumn": 45,
+                    "endOffset": 7298
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 7257,
+                        "endColumn": 45,
+                        "endOffset": 7298
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 158,
+                    "startColumn": 4,
+                    "startOffset": 7303,
+                    "endColumn": 48,
+                    "endOffset": 7347
+                },
+                "from": {
+                    "file": "C:\\Users\\1900\\Desktop\\mandroid\\MStudyAndroidLib\\shareSDK\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 158,
+                        "startColumn": 4,
+                        "startOffset": 7303,
+                        "endColumn": 48,
+                        "endOffset": 7347
+                    }
+                }
+            }
+        ]
+    }
+]
