@@ -141,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             R.id.test_permission1_bt,
             R.id.test_loading_dialog_bt,
             R.id.test_permission_bt,
+            R.id.test_share_bt,
             R.id.test_dialog_bt,
             R.id.test_loading_image_lib_bt,
             R.id.test_ui_state_change_bt,
