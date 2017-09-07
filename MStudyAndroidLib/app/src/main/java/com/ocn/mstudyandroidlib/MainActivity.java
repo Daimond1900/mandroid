@@ -18,6 +18,7 @@ import com.flyco.animation.FlipEnter.FlipVerticalSwingEnter;
 import com.flyco.animation.FlipExit.FlipVerticalExit;
 import com.flyco.dialog.listener.OnBtnClickL;
 import com.flyco.dialog.widget.MaterialDialog;
+import com.wl.daydayup.mylibss.ToastUtils;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -196,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(StudyDesignActivity.newIntent(this));
                 break;
             case R.id.test_share_bt:
-
+                ToastUtils.ShowToast(this, "hello");
                 break;
             case R.id.test_broadcast_bt:
                 startActivity(BroadCastTestActivity.getInstance(this));
